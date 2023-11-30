@@ -1,0 +1,21 @@
+{
+	"name": "Vite Dev",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "frontend",
+	"workspaceFolder": "/app",
+	"postCreateCommand": "./setup.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"shardulm94.trailing-spaces",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"bradlc.vscode-tailwindcss",
+				"dsznajder.es7-react-js-snippets",
+				"EditorConfig.EditorConfig"
+			]
+		}
+	}
+}

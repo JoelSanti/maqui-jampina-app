@@ -9,12 +9,12 @@ const Somos = () => {
         <div className="bg-teal-400 w-12 h-0.5 my-2"></div>
         <div className="bg-teal-400 w-12 h-0.5 my-2"></div>
       </div>
-    
+
 
       <div className="
       pt-2
       lg:flex lg:pt-16
-      
+
       ">
         <img src={bienvenido2} className="px-10 py-4 lg:px-0 lg:py-0 lg:m-auto lg:w-1/2"></img>
 
@@ -38,11 +38,11 @@ const Somos = () => {
       </div>
 
       <div className="
-      
+
       pt-2
       lg:flex lg:pt-16
-      
-      
+
+
       ">
         <div className="block space-y-6 my-auto">
           <h1 className="text-lg md:text-xl text-center font-semibold">NUESTRA MISION</h1>

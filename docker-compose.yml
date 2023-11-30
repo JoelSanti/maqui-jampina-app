@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      no_cache: true
+    image: squishyx/app-vite
+    container_name: centro_fisioterapeutico
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+    command: npm run dev

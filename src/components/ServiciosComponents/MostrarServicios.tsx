@@ -1,20 +1,24 @@
-const MostrarServicio = ({servicio,AgregarServicio}) => {
+
+interface Servicio {
+  nombre: string;
+  id: number;
+}
+interface ServicioProps {
+  servicio: Servicio;
+  AgregarServicio: (nombre: string) => void;
+}
+
+const MostrarServicio = ({servicio,AgregarServicio}:ServicioProps) => {
 
 
-  const onclickServicio = e => {
-    
-
-    AgregarServicio(e.target.id)
-    
-  
-    /*
-    servicioActual = servicio.filter(servicio => servicio.nombre === e)
-    */
+  const onclickServicio = (e: React.MouseEvent<HTMLButtonElement>) => {
+    AgregarServicio(e.currentTarget.id)
   }
+
 
   return (
     <div className=" my-1.5  shadow-2xl lg:w-96">
-       
+
         <button
         onClick={onclickServicio}
         id={servicio.nombre}
@@ -23,7 +27,7 @@ const MostrarServicio = ({servicio,AgregarServicio}) => {
         >
            {servicio.nombre}
         </button>
-    </div> 
+    </div>
   );
 };
 

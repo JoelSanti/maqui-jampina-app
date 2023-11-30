@@ -8,23 +8,23 @@ import {
 import {
   faFacebookF,
   faInstagram,
-  
+
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-500 
-    
+    <footer className="w-full bg-gray-500
+
     md:h-96 md:flex md:justify-between md:space-x-6 md:px-6
 
     lg:h-96 lg:flex lg:justify-between lg:space-x-8 py-20 lg:px-40
-    
+
     ">
       <div className="mx-10 text-gray-100">
         <div className="flex">
           <img src={logox} className="md:w-40 h-20 mx-auto mb-4"></img>
-          
+
         </div>
 
         <p className="md:w-80 text-center md:text-center">
@@ -42,14 +42,14 @@ const Footer = () => {
             <FontAwesomeIcon icon={faPhoneVolume} className="mx-auto md:mx-0 block"/>
             <a href="tel:+51 959 358 244"> <h1>+51 959 358 244</h1></a>
           </div>
-          
-         
+
+
 
          <div>
           <FontAwesomeIcon icon={faMapMarkerAlt} className="mx-auto md:mx-0  block" />
           <h1>Jr. 9 de Octubre 136 - Amarilis</h1>
          </div>
-          
+
          <div>
             <FontAwesomeIcon icon={faEnvelope} className="mx-auto md:mx-0 block"/>
             <a href="mailto:Maquijampina@gmail.com"><h1>Maquijampina@gmail.com</h1></a>

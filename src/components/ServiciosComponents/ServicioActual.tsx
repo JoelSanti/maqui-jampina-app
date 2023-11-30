@@ -1,7 +1,16 @@
 import apuntandoImagen from '../../assets/apuntando.jpg'
 import apuntandoArrivaImagen from '../../assets/apuntando2.jpg'
+interface Servicio {
+  nombre: string;
+  descripcion: string;
+  img: string;
+}
+interface ServicioProps {
+  servicioActual: string;
+  servicios: Servicio[];
+}
 
-const ServicioActual = ({ servicioActual, servicios }) => {
+const ServicioActual = ({ servicioActual, servicios }: ServicioProps) => {
   const [serv] = servicios.filter((s) => s.nombre === servicioActual);
 
   return (
@@ -13,9 +22,9 @@ const ServicioActual = ({ servicioActual, servicios }) => {
           ></img>
           <h1 className="font-medium text-lg">{serv.nombre}</h1>
           <p className="text-gray-500">{serv.descripcion}</p>
-          
+
         </div>
-      ) : 
+      ) :
       (
 
         <div className="">
@@ -25,11 +34,11 @@ const ServicioActual = ({ servicioActual, servicios }) => {
         <img src={apuntandoArrivaImagen}
         className=" lg:w-10/12 lg:hidden lg:mx-auto "
         ></img>
-       
-        
+
+
       </div>
       )
-      
+
       }
     </div>
   );

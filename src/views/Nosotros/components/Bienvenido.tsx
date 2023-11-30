@@ -3,11 +3,11 @@ import bienvenido from '../../../assets/bienvenido.jpg'
 const Bienvenido = () => {
     return (
         <div className="
-        
+
         w-full p-10 text-center space-y-2
 
         lg:w-full lg:p-20 lg:text-center lg:space-y-2
-        
+
         ">
             <h1 className="text-lg md:text-2xl text-center font-bold">BIENVENIDO A MAQUI JAMPINA</h1>
             <div className="flex space-x-4 justify-center">
@@ -19,5 +19,5 @@ const Bienvenido = () => {
         </div>
       );
 }
- 
+
 export default Bienvenido;

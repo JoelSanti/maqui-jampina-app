@@ -1,7 +1,10 @@
-import { useEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const ScrollTop: React.FC = ({ children }) => {
+interface ScrollTopProps {
+  children: ReactNode;
+}
+const ScrollTop: React.FC<ScrollTopProps> = ({ children }) => {
   const { pathname } = useLocation();
 
   useEffect(() => {

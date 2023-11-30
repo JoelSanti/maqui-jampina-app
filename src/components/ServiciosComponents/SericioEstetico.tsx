@@ -1,7 +1,7 @@
 import { DatosSlider } from './components/DatosSlider';
 import Slider from './components/Slider';
 const ServicioEstetico = () => {
-    return ( 
+    return (
       <div className="h-full">
              <h1 className=" text-lg font-bold lg:text-2xl text-center">SERVICIOS ESTÉTICOS</h1>
       <div className="flex space-x-4 justify-center">
@@ -14,5 +14,5 @@ const ServicioEstetico = () => {
 
      );
 }
- 
+
 export default ServicioEstetico;

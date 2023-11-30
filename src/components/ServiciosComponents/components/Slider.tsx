@@ -3,8 +3,16 @@ import { DatosSlider } from './DatosSlider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faAngleDoubleLeft, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
 
+interface Slide {
+  image: string;
+  titulo: string;
+}
 
-const Slider = ({ slides }) => {
+interface SliderProps {
+  slides: Slide[];
+}
+
+const Slider = ({ slides }: SliderProps) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -29,7 +37,7 @@ const Slider = ({ slides }) => {
             <FontAwesomeIcon icon={faAngleDoubleLeft} className=" " />
          </div>
   <div className="flex h-40 md:h-96 text-sm lg:text-auto lg:w-6/12 lg:h-96  mx-auto">
-           
+
         {DatosSlider.map((slide, index) => {
           return (
             <div
@@ -41,14 +49,14 @@ const Slider = ({ slides }) => {
                     <img src={slide.image} alt='travel image' className='image rounded-xl w-12/12' />
                     <h1 className="font-medium">{slide.titulo}</h1>
                </div>
-                
+
               )}
             </div>
           );
         }
-        
+
         )}
-        
+
   </div>
        <div className="h-10 px-4 py-2 shadow-md mx-auto my-auto
        transition duration-500 ease-in-out hover:text-teal-400 hover:bg-teal-50 transform hover:-translate-y-1 hover:scale-110 ...
