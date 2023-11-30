@@ -47,27 +47,26 @@ code {
 @keyframes deslizar {
   0% {
     left:200px;
-    top:0;  
-  
+    top:0;
+
   }
   100% {
 
     left:0px;
-    top:0;  
-  
+    top:0;
+
   }
 }
 
 @keyframes deslizarp {
   0% {
     left:250px;
-    top:0;  
-  
+    top:0;
   }
   100% {
 
     left:0px;
-    top:0;  
-  
+    top:0;
+
   }
 }

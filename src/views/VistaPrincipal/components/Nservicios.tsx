@@ -7,7 +7,7 @@ import {
  } from "react-router-dom";
 const Nservicios = () => {
   const servicios = [
-    { 
+    {
       id:1,
       nombre: "Fisioterapia deportiva",
       img: fisio1,
@@ -33,9 +33,9 @@ const Nservicios = () => {
   return (
     <div
       className="
-    
+
     mb-8  px-8  text-center
-    
+
     md:mb-20 md:mt-4 md:px-14 md:space-x-2 md:text-center
     lg:mb-40 lg:mt-4 lg:px-14 lg:space-x-2 lg:text-center
     "
@@ -44,12 +44,12 @@ const Nservicios = () => {
         className="
       text-xl font-bold
       md:text-2xl md:font-bold
-      
+
       "
       >
         NUESTROS SERVICIOS
       </h1>
-      
+
       <div className="flex space-x-4 justify-center">
                      <div className="bg-teal-400 w-12 h-0.5 my-2"></div>
                      <div className="bg-teal-400 w-12 h-0.5 my-2"></div>
@@ -61,30 +61,30 @@ const Nservicios = () => {
       </p>
 
       <div
-        className=" 
+        className="
 
       my-10
       md:block md:space-x-2 md:my-10
 
       lg:flex lg:space-x-2 lg:my-10
-      
+
       "
       >
-        <div className=" 
-        
+        <div className="
+
         md:flex
-        lg:flex 
+        lg:flex
         ">
-          <div className="mt-6 
-        
+          <div className="mt-6
+
           md:my-0 md:block  md:space-x-4
           lg:my-0 lg:flex lg:w-auto lg:space-x-4
-          
+
           ">
             {servicios.map((servicio) => (
               <Servicio servicio={servicio} key={servicio.id}/>
             ))}
-          
+
           </div>
 
           <Link to="/Servicios"
@@ -112,11 +112,11 @@ const Nservicios = () => {
               <h1>S</h1>
             </div>
 
-           
+
             </Link>
 
-          
-          
+
+
         </div>
         <Link to="/Servicios"
             className="
@@ -133,14 +133,14 @@ const Nservicios = () => {
            <div className="">VER MÁS</div>
           </Link>
 
-        <div className="shadow-xl 
+        <div className="shadow-xl
         text-center space-y-6 py-6 md:pt-16 lg:pt-0
         lg:w-80
-        
+
         ">
           <h1 className="mb-4 font-medium">HORARIO DE ATENCION</h1>
 
-          <div className="flex justify-between px-4  
+          <div className="flex justify-between px-4
           md:mx-4 md:shadow-bj lg:shadow-none
           lg:w-80 lg:mx-0
           ">
@@ -149,7 +149,7 @@ const Nservicios = () => {
           </div>
 
           <div className="
-          flex justify-between px-4  
+          flex justify-between px-4
           md:mx-4 md:shadow-bj lg:shadow-none
           lg:w-80 lg:mx-0
           ">
@@ -158,7 +158,7 @@ const Nservicios = () => {
           </div>
 
           <div className="
-          flex justify-between px-4  
+          flex justify-between px-4
           md:mx-4 md:shadow-bj lg:shadow-none
           lg:w-80 lg:mx-0
           ">
@@ -167,7 +167,7 @@ const Nservicios = () => {
           </div>
 
           <div className="
-          flex justify-between px-4  
+          flex justify-between px-4
           md:mx-4 md:shadow-bj lg:shadow-none
           lg:w-80 lg:mx-0
           ">
@@ -176,7 +176,7 @@ const Nservicios = () => {
           </div>
 
           <div className="
-          flex justify-between px-4  
+          flex justify-between px-4
           md:mx-4 md:shadow-bj lg:shadow-none
           lg:w-80 lg:mx-0
           ">
@@ -185,7 +185,7 @@ const Nservicios = () => {
           </div>
 
           <div className="
-          flex justify-between px-4  
+          flex justify-between px-4
           md:mx-4 md:shadow-bj lg:shadow-none
           lg:w-80 lg:mx-0
           ">
@@ -193,7 +193,7 @@ const Nservicios = () => {
             <h1>7:00-19:00</h1>
           </div>
 
-          
+
         </div>
       </div>
 
