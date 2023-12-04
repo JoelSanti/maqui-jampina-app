@@ -13,8 +13,8 @@ function App() {
     <PageTitle title={"Inicio"}/>
  <BrowserRouter>
           <Routes>
-            <Route path="/" Component={VistaPrincipal}  name = "Inicio" />
-            <Route path="/Nosotros" Component={Nosotros} name = "Nosotros"  />
+            <Route path="/" Component={VistaPrincipal}/>
+            <Route path="/Nosotros" Component={Nosotros}/>
             <Route path="/Servicios" Component={Servicios} />
             <Route path="/Contactenos" Component={Contacto} />
           </Routes>
