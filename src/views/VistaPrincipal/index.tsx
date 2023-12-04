@@ -36,7 +36,7 @@ const VistaPrincipal = () => {
             md:text-lg md:mt-4
 
             lg:text-2xl  lg:mt-4
-            ">Brindamos un servicio de calmadoidad a cargo de profesionales certificados.</p>
+            ">Brindamos un servicio de calidad a cargo de profesionales certificados.</p>
 
           </div>
 
