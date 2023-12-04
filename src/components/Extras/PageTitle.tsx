@@ -1,6 +1,10 @@
-import React, { useEffect } from 'react';
+import { useEffect } from "react";
 
-const PageTitle = ({ title }) => {
+interface Props {
+  title: string;
+}
+
+const PageTitle = ({ title }: Props) => {
   useEffect(() => {
     document.title = title;
   }, [title]);
